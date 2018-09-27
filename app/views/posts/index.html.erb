@@ -1,0 +1,8 @@
+<ul>
+<% @posts.each do |post| %>
+  <li><%= post.title %> in
+    <%=post.category_names.each do |name|%>
+     <%= name %>
+    <% end %>
+  </li>
+<% end %>
